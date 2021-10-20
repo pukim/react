@@ -48,10 +48,10 @@ const UserMap = ({ userMap }) => {
   );
 };
 
-const countActiveUsers=(users) => {
-  console.log('counting users');
+const countActiveUsers = (users) => {
+  console.log("counting users");
   return users.filter((user) => user.active).length;
-}
+};
 
 const Arrays = () => {
   const [users, setUsers] = useState([
@@ -164,10 +164,9 @@ const Arrays = () => {
         onChange={onchange}
       />
 
-      {/* {users.map(user=>(
-			     	 <UserMap userMap={user} />
-			     	))} 
-			    */}
+      {/* {users.map((user) => (
+        <UserMap userMap={user} />
+      ))} */}
 
       <UserList users={users} onRemove={onRemove} onToggle={onToggle} />
       <div>active user : {count} </div>
