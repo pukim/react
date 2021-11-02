@@ -15,6 +15,7 @@ import SpanningTable from "./exam/SpanningTable";
 import PersistentDrawerLeft from "./drawer/PersistentDrawerLeft";
 import DragDrop from "./drag/DragDrop";
 import ExReducer from "./exuse/ExReducer";
+import ParentComp from "./callChild/ParentComp";
 
 // import logo from './logo.svg';
 // import './App.css';
@@ -91,6 +92,9 @@ function App() {
           <li>
             <Link to="/reducer">useXXX </Link>
           </li>
+          <li>
+            <Link to="/call-child">call Child </Link>
+          </li>
         </ul>
       </div>
       <div className={classes.rigth}>
@@ -108,6 +112,7 @@ function App() {
         <Route path="/draw" component={PersistentDrawerLeft} />
         <Route path="/drag" component={DragDrop} />
         <Route path="/reducer" component={ExReducer} />
+        <Route path="/call-child" component={ParentComp} />
       </div>
     </>
   );

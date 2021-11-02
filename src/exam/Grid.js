@@ -68,6 +68,7 @@ const Grid = ({match}) => {
          checkboxSelection
          isRowSelectable={(params) => (params.row.age == 33)}
          onCellClick={handleCellClick}
+         selectionModel={3,4}
        />
        <Button variant="contained" color="primary"> 
             Hello World
